@@ -16,7 +16,7 @@ Mostrar os resultados com duas casas decimais
     >>> numeros =['80', '55.62']
     >>> ex_15_clt_onerosa.input = lambda k: numeros.pop()
     >>> ex_15_clt_onerosa.calcular_assalto_no_salario()
-    + Salário Bruto : 4449.60
+    + Salário Bruto : R$ 4449.60
     - IR (11%) : R$ 489.46
     - INSS (8%) : R$ 355.97
     - Sindicato ( 5%) : R$ 222.48
@@ -27,3 +27,18 @@ Mostrar os resultados com duas casas decimais
 
 def calcular_assalto_no_salario():
     """Escreva aqui em baixo a sua solução"""
+
+    valor_da_hora = float(input('Digite o valor da hora trabalhada:'))
+    hora = int(input('Digite quantas horas você trabalha por mês:'))
+    salario_bruto = valor_da_hora * hora
+    desconto_ir = salario_bruto * 0.11
+    desconto_inss = salario_bruto * 0.08
+    desconto_sindical = salario_bruto * 0.05
+    salario_liquido_sem_ir = salario_bruto - desconto_inss - desconto_sindical
+    salario_liquido = salario_bruto - desconto_ir - desconto_inss - desconto_sindical
+    print(f'+ Salário Bruto : R$ {salario_bruto:.2f}\n'
+          f'- IR (11%) : R$ {desconto_ir:.2f}\n'
+          f'- INSS (8%) : R$ {desconto_inss:.2f}\n'
+          f'- Sindicato ( 5%) : R$ {desconto_sindical:.2f}\n'
+          f'= Salário Liquido : R$ {salario_liquido:.2f}'
+          )
