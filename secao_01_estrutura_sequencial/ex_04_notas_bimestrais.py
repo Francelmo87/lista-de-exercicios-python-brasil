@@ -21,5 +21,5 @@ def calcular_media():
     nota3 = float(input('Digite a nota do 3º bimestre: '))
     nota4 = float(input('Digite a nota do 4º bimestre: '))
     media = (nota1 + nota2 + nota3 + nota4) / 4
-    print(f'A média do Aluno foi: {media}')
+    print(f'A média anual é {media}')
 
