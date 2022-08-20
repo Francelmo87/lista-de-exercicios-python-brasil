@@ -17,3 +17,9 @@ Mostrar salário com duas casas decimais
 
 def calcular_salario():
     """Escreva aqui em baixo a sua solução"""
+
+    salario = float(input('Qual é o valor de seu salário mensal: '))
+    horas = int(input('Quantas hora você trabalha mensalmente: '))
+    result = salario * horas
+    print(f'Seu salário desse mês é {result :.2f}')
+
