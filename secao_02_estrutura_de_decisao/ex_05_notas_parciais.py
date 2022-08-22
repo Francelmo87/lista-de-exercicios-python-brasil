@@ -9,13 +9,13 @@ Faça um programa para a leitura de duas notas parciais de um aluno. O programa 
 Obs: 0 <= nota <= 10
 
     >>> notas_parciais(10, 4)
-    'Aprovado'
+    Aprovado
     >>> notas_parciais(0, 10)
     'Reprovado'
     >>> notas_parciais(5, 8)
     'Reprovado'
     >>> notas_parciais(10, 10)
-    'Aprovado com Distinção'
+    Aprovado com Distinção
 """
 
 
