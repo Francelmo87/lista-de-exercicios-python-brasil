@@ -9,15 +9,23 @@ Faça um programa para a leitura de duas notas parciais de um aluno. O programa 
 Obs: 0 <= nota <= 10
 
     >>> notas_parciais(10, 4)
-    Aprovado
+    'Aprovado'
     >>> notas_parciais(0, 10)
     'Reprovado'
     >>> notas_parciais(5, 8)
     'Reprovado'
     >>> notas_parciais(10, 10)
-    Aprovado com Distinção
+    'Aprovado com Distinção'
 """
 
 
 def notas_parciais(nota_1, nota_2):
     """Escreva aqui em baixo a sua solução"""
+
+    nota = (nota_1 + nota_2) / 2
+
+    if nota == 10:
+        return "Aprovado com Distinção"
+    elif nota >= 7:
+        return 'Aprovado'
+    return 'Reprovado'
