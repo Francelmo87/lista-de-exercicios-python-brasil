@@ -25,7 +25,7 @@ def notas_parciais(nota_1, nota_2):
     nota = (nota_1 + nota_2) / 2
 
     if nota == 10:
-        return "Aprovado com Distinção"
+        return 'Aprovado com Distinção'
     elif nota >= 7:
         return 'Aprovado'
     return 'Reprovado'
