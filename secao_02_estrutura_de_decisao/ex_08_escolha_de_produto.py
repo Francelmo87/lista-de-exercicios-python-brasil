@@ -20,3 +20,15 @@ Mostrar o resultado com duas casas decimais
 
 def decidir_melhor_produto(x, y, z):
     """Escreva aqui em baixo a sua solução"""
+
+    # if x < y < z:
+    #     print(f'Melhor produto custa R$ {float(z)}') # o problema é que so fica uma casa
+
+    melhor = float(min(x, y, z))
+    print(f'Melhor produto custa R$ {melhor:.2f}')
+
+
+
+
+
+
