@@ -2,7 +2,8 @@
 Exercício 15 da seção de estrutura de decisão da Python Brasil:
 https://wiki.python.org.br/EstruturaDeDecisao
 
-Faça um Programa que peça os 3 lados de um triângulo. O programa deverá informar se os valores podem ser um triângulo. Indique, caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno.
+Faça um Programa que peça os 3 lados de um triângulo. O programa deverá informar se os valores podem ser um triângulo.
+ Indique, caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno.
 Dicas:
 Três lados formam um triângulo quando a soma de quaisquer dois lados for maior que o terceiro;
 Triângulo Equilátero: três lados iguais;
@@ -27,3 +28,12 @@ Triângulo Escaleno: três lados diferentes;
 
 def classificar_triangulo(lado_a: float, lado_b: float, lado_c: float):
     """Escreva aqui em baixo a sua solução"""
+
+    if lado_a + lado_b < lado_c or lado_b + lado_c < lado_a or lado_a + lado_c < lado_b:
+        return 'Não é um triângulo'
+    elif lado_a != lado_b != lado_c:
+        return 'Triângulo Escaleno'
+    elif lado_a == lado_b != lado_c or lado_b == lado_c != lado_a:
+        return 'Triângulo Isósceles'
+    elif lado_a == lado_b == lado_c:
+        return 'Triângulo Equilátero'
