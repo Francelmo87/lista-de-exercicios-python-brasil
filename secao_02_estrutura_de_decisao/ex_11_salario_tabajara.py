@@ -42,7 +42,6 @@ Mostrar valores monetários com duas casas decimais.
 def calcular_aumento(salario: float):
     """Escreva aqui em baixo a sua solução"""
 
-    salario = 100
     if salario <= 280:
         percentual = 20
     elif 280 < salario <= 700:
