@@ -33,3 +33,16 @@ Caso contrário, ele será classificado como "Inocente".
 
 def investigar(telefonou: str, estava_no_local: str, mora_perto: str, devia: str, trabalhou: str, ):
     """Escreva aqui em baixo a sua solução"""
+    resp = (telefonou, estava_no_local, mora_perto, devia, trabalhou)
+    count = resp.count('Sim')
+
+    if count == 5:
+        return 'Assassino'
+    elif count == 4:
+        return 'Cúmplice'
+    elif count == 3:
+        return 'Cúmplice'
+    elif count == 2:
+        return 'Suspeito'
+    else:
+        return 'Inocente'
