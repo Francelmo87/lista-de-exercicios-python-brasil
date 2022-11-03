@@ -28,7 +28,6 @@ def validar_senha():
             usuario == senha
         except ValueError:
             print('Senha deve ser diferente do login')
-
         else:
             if usuario != senha:
                 return 'Cadastro realizado com sucesso, seu login é meu_login'
